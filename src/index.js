@@ -11,7 +11,6 @@ import store from './store';
 
 
 ReactDOM.render(
-    <Provider store={store}><Apps /></Provider>    
-    ,
+    <Provider store={store}><Apps /></Provider>,
      document.getElementById('root'));
 registerServiceWorker();

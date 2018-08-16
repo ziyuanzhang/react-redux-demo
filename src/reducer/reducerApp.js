@@ -1,7 +1,7 @@
 
 let initialState={
     title:'测试标题',
-    list:[]
+    list:['test1','test2']
   }
   let reducerApp =(state=initialState,action)=>{
     switch (action.type) {
