@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 import Apps from './container/connectApp';
-import store from './store';
+import store from './store/store';
 
 
 
