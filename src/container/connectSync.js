@@ -1,17 +1,17 @@
 import {connect} from 'react-redux';
-import App from '../component/App';
+import Synchronize from '../component/Synchronize/Synchronize'
 import Action from '../action/action'
 
 
 
 let mapStateToProps=(state) =>({
-     reducerApp:state.reducerApp
+     reducerSync:state.reducerSync
 });
 let mapDispatchToProps=(dispatch,ownsProp)=>({
     add:(value)=>{dispatch({type:Action.ADD,value})},
     del:(index)=>{dispatch({type:Action.DEL,index})}
 })
 
-let Apps = connect(mapStateToProps,mapDispatchToProps)(App)
+let SynchronizeS = connect(mapStateToProps,mapDispatchToProps)(Synchronize)
 
-export default Apps;
+export default SynchronizeS;

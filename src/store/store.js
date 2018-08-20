@@ -1,9 +1,9 @@
 import { combineReducers, createStore } from "redux";
-import reducerApp from "./reducer/reducerApp";
+import reducerSync from "./reducer/reducerSync";
 import reducerTest from './reducer/reducerTest'
 
 let reducers = combineReducers({
-    reducerApp,
+    reducerSync,
     reducerTest
 })
 let store = createStore(reducers)
