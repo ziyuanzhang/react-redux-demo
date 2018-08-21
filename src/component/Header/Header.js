@@ -12,7 +12,7 @@ class Headers extends Component{
           }  
     }
     componentDidMount(){
-        console.log(this)
+        //console.log(this)
     }
   
       handleClick = (e) => {

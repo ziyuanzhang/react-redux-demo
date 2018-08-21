@@ -1,6 +1,25 @@
+.Synchronize{
+    background-color: #fff;
+    padding: 10px;
+}
 .ant-col-24{
     margin: 5px 0px;
 }
 h2{
     text-align: center;
+}
+.ant-input-group-addon{    
+    background-color:  #1DA57A;
+    border-color: #1DA57A;
+    padding: 0px;
+}
+
+.ant-input-group-addon:hover{
+    background-color:  #3db389;
+    border-color: #3db389;
+}
+.btn-add{
+    cursor: pointer;
+    color: #fff;
+    padding: 12px;
 }

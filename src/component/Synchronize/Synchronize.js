@@ -6,12 +6,30 @@ import { Input } from 'antd';
 
 
 class Synchronize extends Component { 
-
+  constructor(){
+    super();
+    this.state={
+      inpVal:''
+    }
+  }
+HandleChange(event){
+   this.setState({
+      inpVal:event.target.value
+  })
+}
+HandleInputReset(){
+  this.setState({
+      inpVal:''
+  })
+}
   
   render() {
-    const Add = Input.Search;
     let {title,list} = this.props.reducerSync
     let {add,del} =this.props;
+    let {inpVal} = this.state;
+    let btn = (
+         <div className='btn-add'  size="large" onClick={()=>{this.HandleInputReset();add(this.state.inpVal)}}>Add</div> 
+    )
     return (
       <div className="Synchronize">
       <h2>{title}</h2>
@@ -25,16 +43,7 @@ class Synchronize extends Component {
            }
        </Row>
         <hr/>
-       
-        {/* <label><input placeholder="输入内容" ref={inp =>{this.inp=inp}} type="text"/></label>
-        <Button type="primary" onClick={()=>{add(this.inp.value)}}>click</Button> */}
-
-        <Add
-          placeholder="输入内容"
-          enterButton="Add"
-          size="large"
-          onSearch={(value) => {add(value)}}
-        />
+          <label><Input  size="large"  placeholder="输入内容" addonAfter={btn}  value ={inpVal}  onChange={(event)=>{this.HandleChange(event)}} onPressEnter={()=>{this.HandleInputReset();add(this.state.inpVal)}}/></label>
 
       </div>
     );
