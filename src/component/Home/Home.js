@@ -50,7 +50,7 @@ class Home extends Component{
             <div className='Home'>
                 <h2>Home -- ajax</h2>
                 <p className='home-show'>
-                    <Button onClick={()=>{this.handleGet()}}>展示内容</Button>
+                    <Button  type="primary" onClick={()=>{this.handleGet()}}>展示内容</Button>
                 </p>
                 <Table dataSource={dataSource} columns={columns} />
             </div>
