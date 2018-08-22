@@ -6,13 +6,13 @@ import { Menu } from 'antd';
 class Headers extends Component{
     constructor(props){
         super(props)
-        
+       // console.log("props",props)
         this.state = {
-            current: window.location.pathname
+            current: '/'
           }  
     }
     componentDidMount(){
-        //console.log(this)
+       // console.log(this)
     }
   
       handleClick = (e) => {
@@ -28,6 +28,7 @@ class Headers extends Component{
                 selectedKeys={[this.state.current]}
                 mode="horizontal"
             >
+            
                 <Menu.Item key="/">
                     <NavLink exact className="blue"  to='/'>home</NavLink>
                 </Menu.Item>

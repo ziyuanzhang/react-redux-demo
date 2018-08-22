@@ -12,7 +12,7 @@ class Asynchronous extends Component{
           }
     }
     componentDidMount(){
-        axios.get('http://5b5eb1c48e9f160014b88d1e.mockapi.io/api/commentList').then((res)=>{
+        axios.get('https://5b5eb1c48e9f160014b88d1e.mockapi.io/api/commentList').then((res)=>{
              
         }).catch()
     }
