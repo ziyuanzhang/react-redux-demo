@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router /*  basename="react-redux-demo"  */>
+        <Router  basename="react-redux-demo" >
           <div className="App">
           <Layout>
               <Header>

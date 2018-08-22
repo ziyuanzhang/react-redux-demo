@@ -1,5 +1,6 @@
 let Action={
     'ADD':'ADD',
-    'DEL':'DEL'
+    'DEL':'DEL',
+    'PUT':'PUT'
 }
 export default Action;

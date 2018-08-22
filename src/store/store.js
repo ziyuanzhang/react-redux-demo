@@ -1,10 +1,10 @@
 import { combineReducers, createStore } from "redux";
 import reducerSync from "./reducer/reducerSync";
-import reducerTest from './reducer/reducerTest'
+import reducerAsync from './reducer/reducerAsync'
 
 let reducers = combineReducers({
     reducerSync,
-    reducerTest
+    reducerAsync
 })
 let store = createStore(reducers)
 
