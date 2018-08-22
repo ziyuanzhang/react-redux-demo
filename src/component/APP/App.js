@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-
 import {Provider} from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import store from '../../store/store'
@@ -8,7 +7,7 @@ import Headers from '../Header/Header'
 import Footers from '../Footer/Footer'
 import Home from '../Home/Home'
 import SynchronizeS from '../../container/connectSync'
-import asynchronous from '../Asynchronous/Asynchronous'
+import AsynchronousS from '../../container/connectAsync'
 import Error404 from '../Error404/Error404'
 
 
@@ -30,7 +29,7 @@ class App extends Component {
                     <Switch>
                       <Route exact path="/" component={Home} />            
                       <Route path="/Synchronize" component={SynchronizeS} />
-                      <Route path="/asynchronous" component={asynchronous} />
+                      <Route path="/asynchronous" component={AsynchronousS} />
                       <Route  component={Error404} />
                     </Switch>
               </Content>
