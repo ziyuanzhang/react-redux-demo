@@ -20,6 +20,9 @@ class AddComment extends Component{
         })
     }
    HandleAddComment(){
+       if(!this.state.TXTval){
+           return
+       }
         this.setState({
             TXTval:''
         })
@@ -35,8 +38,9 @@ class AddComment extends Component{
     let {TXTval} =this.state;
        return(
            <div className='comment-enter-cantainer'>
+                 <p>留言：</p>
                  <TextArea className='comment-enter' value={TXTval} onChange={(event)=>{this.HandleChange(event)}} placeholder="Autosize height with minimum and maximum number of lines" autosize={{ minRows: 2, maxRows: 6 }} />
-                 <p>
+                 <p className='add-btn-container'>
                   <Button className='comment-add-Btn' type="primary" onClick={()=>{this.HandleAddComment()}}>Primary</Button> 
                  </p>
                  

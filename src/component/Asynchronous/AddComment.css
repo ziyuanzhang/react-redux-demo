@@ -2,8 +2,8 @@
     margin-top: 20px;
 }
 .comment-enter{
-    margin: 20px 0;
+    margin-bottom: 10px;
 }
-.comment-enter-cantainer p{
+.comment-enter-cantainer .add-btn-container{
     text-align: right;
 }

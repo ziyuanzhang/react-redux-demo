@@ -31,7 +31,7 @@ class Asynchronous extends Component{
         } )
     }
     eventAddCom(data){        
-        /* axios.post("https://5b5eb1c48e9f160014b88d1e.mockapi.io/api/commentList",data).then((res)=>{
+        axios.post("https://5b5eb1c48e9f160014b88d1e.mockapi.io/api/commentList",data).then((res)=>{
             //console.log('datass:',res.data)
             let statedd = this.state.commentList
 
@@ -41,7 +41,7 @@ class Asynchronous extends Component{
                })
         }).catch((err)=>{
             console.log(err)
-        }) */
+        })
         let {add} = this.props;
         add(data)
     }

@@ -6,9 +6,10 @@ import { Menu } from 'antd';
 class Headers extends Component{
     constructor(props){
         super(props)
-        console.log("loction",window.location.pathname)
+        let defaultPathname =  window.location.pathname
+        defaultPathname = defaultPathname.split('/react-redux-demo')[1];
         this.state = {
-            current: '/'
+            current: defaultPathname
           }  
     }
     componentDidMount(){
